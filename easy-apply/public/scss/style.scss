@@ -1,6 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: red;
-}
+//Abstracts
+@import "abstracts/_abstracts-dir";
+
+//Base Styles
+@import "base/_base-dir";
+
+//Components
+@import "components/_components-dir";
+
+//Layout
+@import "layouts/_layouts-dir";
+
