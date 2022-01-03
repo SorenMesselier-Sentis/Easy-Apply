@@ -1,0 +1,52 @@
+header {
+    min-height: 800px;
+    background-image: url('../img/fond.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 0;
+
+    > div {
+        @include sectionpadding;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        border: solid 1px red;
+
+        & > div {
+            width: 50%;
+            border: solid 1px red;
+        }
+
+        &__desc {
+            font-family: $font-text;
+            color: white;
+
+            h1 {
+                font-size: 65px;
+                font-weight: bold;
+                line-height: 78px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 28px;
+            }
+
+            div {
+                height: 5px;
+                width: 72px;
+                background-color: white;
+                margin-top: 94px;
+                margin-bottom: 10px;
+            }
+        }
+
+        &__image {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}

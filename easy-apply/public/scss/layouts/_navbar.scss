@@ -1,0 +1,47 @@
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    font-family: $font-text;
+    font-size: 18px;
+    
+    ul {
+        display: flex;
+        gap: 33px;
+
+        &.navbar__main-menu {
+            gap: 145px;
+        }
+
+        li {
+            
+            a {
+                text-decoration: none;
+                color: $text-main;
+                display: inline-block;
+                position: relative;
+
+                &.button1 {
+                    border: solid 2px $text-main;
+                    padding: 5px 26px 7px 28px;
+                    border-radius: 25px;
+                }
+
+                &.button2 {
+                    padding: 5px 39px 7px 44px;
+                    border-radius: 25px;
+                    background-color: $color-orange;
+                }
+            }
+
+        }
+    }
+
+    > div:last-child {
+        justify-self: flex-end;
+    }
+
+    > div:first-child {
+        margin-right: 89px;
+    }
+}
