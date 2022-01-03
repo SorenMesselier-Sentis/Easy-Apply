@@ -60,5 +60,8 @@
             </section>
         </div>
     </header>
+    <section class="video">
+        <h2>Comment ça marche ?</h2>
+    </section>
 </body>
 </html>
