@@ -38,6 +38,26 @@
                     <img src="img/people.png" alt="people holding phones">
                 </div>
             </section>
+            <section class="buttons">
+                <div>
+                    <div>
+                        <a href="#">    
+                            <div class="testImg">
+                                <div class="circ"></div>
+                                Créer un profil recruteur
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">    
+                            <div class="testImg">
+                                <div class="circ"></div>
+                                Créer un profil recruteur
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </header>
 </body>

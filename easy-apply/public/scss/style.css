@@ -67,10 +67,6 @@ header .header-content {
   display: flex;
   align-items: center;
   margin-top: 50px;
-  border: solid 1px red;
-}
-header .header-content > div {
-  border: solid 1px red;
 }
 header .header-content__desc {
   font-family: "PT Sans Pro", sans-serif;
@@ -102,6 +98,44 @@ header .header-content__image {
 }
 header .header-content__image img {
   width: 80%;
+}
+header .buttons {
+  padding: 0 36px;
+  margin-top: 194px;
+}
+header .buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .buttons a {
+  text-decoration: none;
+  font-family: "PT Sans Pro", sans-serif;
+  font-size: 24px;
+}
+header .buttons a .testImg {
+  display: flex;
+  background-image: url("../img/bouton.png");
+  background-size: cover;
+  height: 146px;
+  width: 382px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-weight: 700;
+  opacity: 1;
+  transition: 0.2s;
+}
+header .buttons a .testImg:hover {
+  opacity: 0.8;
+}
+header .buttons a .testImg .circ {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100%;
+  margin-right: 25px;
 }
 
 .navbar {
