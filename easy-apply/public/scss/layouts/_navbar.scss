@@ -11,6 +11,23 @@
 
         &.navbar__main-menu {
             gap: 145px;
+
+            li {
+                a {
+                    position: relative;
+
+                    &:hover::before {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        bottom: -10px;
+                        left: 0;
+                        width: 25px;
+                        height: 3px;
+                        background-color: $color-orange;
+                    }
+                }
+            }
         }
 
         li {

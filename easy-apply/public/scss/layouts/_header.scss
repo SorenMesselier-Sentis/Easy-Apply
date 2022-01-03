@@ -1,5 +1,5 @@
 header {
-    min-height: 800px;
+    min-height: 100vh;
     background-image: url('../img/fond.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -12,16 +12,17 @@ header {
     .header-content {
         display: flex;
         align-items: center;
+        margin-top: 50px;
         border: solid 1px red;
 
         & > div {
-            width: 50%;
             border: solid 1px red;
         }
 
         &__desc {
             font-family: $font-text;
             color: white;
+            width: 70%;
 
             h1 {
                 font-size: 65px;
@@ -30,8 +31,10 @@ header {
             }
 
             p {
-                font-size: 22px;
+                font-size: 18px;
                 line-height: 28px;
+                width: 65%;
+                text-align: left;
             }
 
             div {
@@ -46,6 +49,11 @@ header {
         &__image {
             display: flex;
             justify-content: center;
+            width: 30%;
+
+            img {
+                width: 80%;
+            }
         }
 
     }
