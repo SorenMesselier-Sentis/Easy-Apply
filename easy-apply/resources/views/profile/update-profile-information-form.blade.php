@@ -34,7 +34,7 @@
                 <!-- New Profile Photo Preview -->
                 <div class="mt-2" x-show="photoPreview">
                     <span class="block rounded-full w-20 h-20 bg-cover bg-no-repeat bg-center"
-                          x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
+                        x-bind:style="'background-image: url(\'' + photoPreview + '\');'">
                     </span>
                 </div>
 
@@ -65,68 +65,12 @@
             <x-jet-input id="last_name" type="text" class="mt-1 block w-full" wire:model.defer="state.last_name" autocomplete="last_name" />
             <x-jet-input-error for="last_name" class="mt-2" />
         </div>
-
-        <!-- birth_date -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="birth_date" value="{{ __('Date de Naissance') }}" />
-            <x-jet-input id="birth_date" type="text" class="mt-1 block w-full" wire:model.defer="state.birth_date" autocomplete="birth_date" />
-            <x-jet-input-error for="birth_date" class="mt-2" />
-        </div>
-
-        <!-- website -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="website" value="{{ __('Site Internet') }}" />
-            <x-jet-input id="website" type="text" class="mt-1 block w-full" wire:model.defer="state.website" autocomplete="website" />
-            <x-jet-input-error for="website" class="mt-2" />
-        </div>
-
-        <!-- phone -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="phone" value="{{ __('Telephone') }}" />
-            <x-jet-input id="phone" type="text" class="mt-1 block w-full" wire:model.defer="state.phone" autocomplete="phone" />
-            <x-jet-input-error for="phone" class="mt-2" />
-        </div>
-
-        <!-- cv -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="cv" value="{{ __('CV') }}" />
-            <x-jet-input id="cv" type="text" class="mt-1 block w-full" wire:model.defer="state.cv" autocomplete="cv" />
-            <x-jet-input-error for="cv" class="mt-2" />
-        </div>
-
-        <!-- picture -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="picture" value="{{ __('Photo de Profil') }}" />
-            <x-jet-input id="picture" type="text" class="mt-1 block w-full" wire:model.defer="state.picture" autocomplete="picture" />
-            <x-jet-input-error for="picture" class="mt-2" />
-        </div>
         
-        <!-- grade -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="grade" value="{{ __('Niveau d etudes') }}" />
-            <x-jet-input id="grade" type="text" class="mt-1 block w-full" wire:model.defer="state.grade" autocomplete="grade" />
-            <x-jet-input-error for="grade" class="mt-2" />
-        </div>
-
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
             <x-jet-label for="email" value="{{ __('Email') }}" />
             <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
             <x-jet-input-error for="email" class="mt-2" />
-        </div>
-
-        <!-- facebook -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="facebook" value="{{ __('Facebook') }}" />
-            <x-jet-input id="facebook" type="text" class="mt-1 block w-full" wire:model.defer="state.facebook" autocomplete="facebook" />
-            <x-jet-input-error for="facebook" class="mt-2" />
-        </div>
-
-        <!-- linked_in -->
-        <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="linked_in" value="{{ __('Linked In') }}" />
-            <x-jet-input id="linked_in" type="text" class="mt-1 block w-full" wire:model.defer="state.linked_in" autocomplete="linked_in" />
-            <x-jet-input-error for="linked_in" class="mt-2" />
         </div>
     </x-slot>
 

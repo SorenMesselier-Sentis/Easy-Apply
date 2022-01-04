@@ -23,16 +23,7 @@ class CreateNewUser implements CreatesNewUsers
         Validator::make($input, [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'birth_date' => ['required', 'dateTime'],
-            'website' => ['nullable', 'string', 'max:255'],
-            'phone' => ['required', 'string', 'max:255'],
-            'cv' => ['required', 'string', 'max:255'],
-            'picture' => ['required', 'mimes:jpg,jpeg,png', 'max:1024'],
-            'grade' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'facebook' => ['nullable', 'string', 'max:255'],
-            'linked_in' => ['nullable', 'string', 'max:255'],
-            'localisation' => ['required', 'string', 'max:255'],
             'password' => $this->passwordRules(),
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
@@ -40,16 +31,7 @@ class CreateNewUser implements CreatesNewUsers
         return User::create([
             'first_name' => $input['first_name'],
             'last_name' => $input['last_name'],
-            'birth_date' => $input['birth_date'],
-            'website' => $input['website'],
-            'phone' => $input['phone'],
-            'cv' => $input['cv'],
-            'picture' => $input['picture'],
-            'grade' => $input['grade'],
             'email' => $input['email'],
-            'facebook' => $input['facebook'],
-            'linked_in' => $input['linked_in'],
-            'localisation' => $input['localisation'],
             'password' => Hash::make($input['password']),
         ]);
     }

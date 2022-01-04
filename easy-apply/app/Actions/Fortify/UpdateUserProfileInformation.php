@@ -21,16 +21,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
         Validator::make($input, [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'birth_date' => ['required', 'dateTime'],
-            'website' => ['nullable', 'string', 'max:255'],
-            'phone' => ['required', 'string', 'max:255'],
-            'cv' => ['required', 'string', 'max:255'],
-            'picture' => ['required', 'mimes:jpg,jpeg,png', 'max:1024'],
-            'grade' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', Rule::unique('users')->ignore($user->id)],
-            'facebook' => ['nullable', 'string', 'max:255'],
-            'linked_in' => ['nullable', 'string', 'max:255'],
-            'localisation' => ['required', 'string', 'max:255'],
             'photo' => ['nullable', 'mimes:jpg,jpeg,png', 'max:1024'],
         ])->validateWithBag('updateProfileInformation');
 
@@ -45,16 +36,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             $user->forceFill([
                 'first_name' => ['required', 'string', 'max:255'],
                 'last_name' => ['required', 'string', 'max:255'],
-                'birth_date' => ['required', 'dateTime'],
-                'website' => ['string', 'max:255'],
-                'phone' => ['required', 'string', 'max:255'],
-                'cv' => ['required', 'string', 'max:255'],
-                'picture' => ['required', 'mimes:jpg,jpeg,png', 'max:1024'],
-                'grade' => ['required', 'string', 'max:255'],
                 'email' => $input['email'],
-                'facebook' => ['nullable', 'string', 'max:255'],
-                'linked_in' => ['nullable', 'string', 'max:255'],
-                'localisation' => ['required', 'string', 'max:255'],
             ])->save();
         }
     }
