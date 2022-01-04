@@ -17,8 +17,8 @@ class CreateCandidateSoftskillsTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_softskill')->constrained('softskills')->onDelete('cascade');
+            $table->foreignId('id_candidate')->constrained('candidates');
+            $table->foreignId('id_softskill')->constrained('softskills');
         });
     }
 

@@ -17,8 +17,8 @@ class CreateCandidateLanguagesTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_language')->constrained('languages')->onDelete('cascade');
+            $table->foreignId('id_candidate')->constrained('candidates');
+            $table->foreignId('id_language')->constrained('languages');
         });
     }
 

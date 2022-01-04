@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::delete('/candidate/delete/{id}' , [ CandidateController::class, 'destroy'])->middleware('auth');

@@ -17,12 +17,12 @@ class CreateEducationsTable extends Migration
             $table->id();
             $table->string('label');
             $table->date('start_date');
-            $table->sate('end_date');
+            $table->date('end_date');
             $table->timestamps();
 
-            $table->foreignId('id_degree')->constrained('degrees')->onDelete('cascade');
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_diploma')->constrained('diplomas')->onDelete('cascade');
+            $table->foreignId('id_degree')->constrained('degrees');
+            $table->foreignId('id_candidate')->constrained('candidates');
+            $table->foreignId('id_diploma')->constrained('diplomas');
         });
     }
 

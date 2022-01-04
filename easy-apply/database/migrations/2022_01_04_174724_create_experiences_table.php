@@ -22,8 +22,8 @@ class CreateExperiencesTable extends Migration
             $table->date('end_date');
             $table->timestamps();
 
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_sector')->constrained('sectors')->onDelete('cascade');
+            $table->foreignId('id_candidate')->constrained('candidates');
+            $table->foreignId('id_sector')->constrained('sectors');
         });
     }
 

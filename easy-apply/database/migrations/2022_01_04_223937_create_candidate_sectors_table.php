@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCandidateSectorTable extends Migration
+class CreateCandidateSectorsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +14,11 @@ class CreateCandidateSectorTable extends Migration
     public function up()
     {
         Schema::create('candidate_sectors', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+          $table->id();
+          $table->timestamps();
 
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_sector')->constrained('sectors')->onDelete('cascade');
+          $table->foreignId('id_candidate')->constrained('candidates');
+          $table->foreignId('id_sector')->constrained('sectors');
         });
     }
 

@@ -17,8 +17,8 @@ class CreateCandidatesToJobsTable extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('id_candidate')->constrained('candidates')->onDelete('cascade');
-            $table->foreignId('id_job')->constrained('jobs')->onDelete('cascade');
+            $table->foreignId('id_candidate')->constrained('candidates');
+            $table->foreignId('id_job')->constrained('jobs');
         });
     }
 

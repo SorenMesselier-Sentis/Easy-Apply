@@ -15,9 +15,10 @@ class CreateJobsTagsTable extends Migration
     {
         Schema::create('jobs_tags', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_tag')->constrained('tags')->onDelete('cascade');
-            $table->foreignId('id_job')->constrained('jobs')->onDelete('cascade');
             $table->timestamps();
+
+            $table->foreignId('id_tag')->constrained('tags');
+            $table->foreignId('id_job')->constrained('jobs');
         });
     }
 

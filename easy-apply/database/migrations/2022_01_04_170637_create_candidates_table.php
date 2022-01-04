@@ -28,8 +28,8 @@ class CreateCandidatesTable extends Migration
             $table->boolean('is_completed')->default(0);
             $table->timestamps();
 
-            $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
-            $table->foreignId('id_status')->constrained('status')->onDelete('cascade');
+            $table->foreignId('id_user')->constrained('users');
+            $table->foreignId('id_status')->constrained('status');
         });
     }
 
