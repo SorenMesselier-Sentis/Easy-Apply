@@ -1,0 +1,67 @@
+.card {
+    background-color: white;
+    max-width: 594px;
+    min-height: 767px;
+    margin: 0 auto;
+    padding: 103px 60px 28px 60px;
+    border-radius: 42px;
+    margin-bottom: 285px;
+    margin-top: 75px;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+
+    h2 {
+        text-align: center;
+        font-family: $font-title;
+        font-size: 50px;
+        color: $color-gray-title;
+        font-weight: bold;
+        margin-bottom: 73px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-family: $font-text;
+            color: $color-gray-text;
+            font-size: 18px;
+            margin-bottom: 9px;
+        }
+
+        input {
+            height: 48px;
+            border: none;
+            background-color: $color-gray-input;
+            margin-bottom: 28px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $color-orange;
+            cursor: pointer;
+            color: white;
+            font-size: 25px;
+            font-family: $font-text;
+            border: none;
+            border-radius: 25px;
+            width: 55%;
+            height: 60px;
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 29px;
+            margin-bottom: 57px;
+        }
+
+        a {
+            color: $color-gray-text;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $font-text;
+        }
+    }
+}

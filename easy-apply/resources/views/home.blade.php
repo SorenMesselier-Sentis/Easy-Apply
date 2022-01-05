@@ -24,7 +24,7 @@
                 <div>
                     <ul>
                         <li><a href="" class="button1">Se connecter</a></li>
-                        <li><a href="" class="button2">S'inscrire</a></li>
+                        <li><a href="{{ url('register') }}" class="button2">S'inscrire</a></li>
                     </ul>
                 </div>
             </nav>
