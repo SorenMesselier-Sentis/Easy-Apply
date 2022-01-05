@@ -12,4 +12,17 @@
 
 * {
     z-index: 1;
+    box-sizing: border-box;
+}
+
+.video {
+    @include sectionpadding;
+    margin-top: 276px;
+
+    h2 {
+        font-family: $font-title;
+        font-size: 35px;
+        color: $color-blue;
+        font-weight: bold;
+    }
 }

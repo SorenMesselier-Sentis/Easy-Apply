@@ -52,6 +52,10 @@ table {
   font-family: "PT Sans Pro";
   src: url("fonts/pt-sans-pro/PTSansProLight.OTF");
 }
+@font-face {
+  font-family: "Now-Medium";
+  src: url("fonts/Now-Medium/NowAlt-Bold.otf");
+}
 header {
   min-height: 100vh;
   background-image: url("../img/fond.png");
@@ -67,10 +71,6 @@ header .header-content {
   display: flex;
   align-items: center;
   margin-top: 50px;
-  border: solid 1px red;
-}
-header .header-content > div {
-  border: solid 1px red;
 }
 header .header-content__desc {
   font-family: "PT Sans Pro", sans-serif;
@@ -81,6 +81,7 @@ header .header-content__desc h1 {
   font-size: 65px;
   font-weight: bold;
   line-height: 78px;
+  font-family: "Now-Medium", sans-serif;
 }
 header .header-content__desc p {
   font-size: 18px;
@@ -102,6 +103,39 @@ header .header-content__image {
 }
 header .header-content__image img {
   width: 80%;
+}
+header .buttons {
+  padding: 0 36px;
+  margin-top: 194px;
+}
+header .buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .buttons a {
+  text-decoration: none;
+  font-family: "Now-Medium", sans-serif;
+  font-size: 24px;
+}
+header .buttons a .testImg {
+  display: flex;
+  background-image: url("../img/bouton.png");
+  background-size: cover;
+  height: 146px;
+  width: 382px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-weight: 700;
+}
+header .buttons a .testImg .circ {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 100%;
+  margin-right: 25px;
 }
 
 .navbar {
@@ -156,6 +190,19 @@ header .header-content__image img {
 
 * {
   z-index: 1;
+  box-sizing: border-box;
+}
+
+.video {
+  padding: 0 140px;
+  margin: auto;
+  margin-top: 276px;
+}
+.video h2 {
+  font-family: "Now-Medium", sans-serif;
+  font-size: 35px;
+  color: #34A9FD;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

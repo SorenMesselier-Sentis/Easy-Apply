@@ -38,7 +38,30 @@
                     <img src="img/people.png" alt="people holding phones">
                 </div>
             </section>
+            <section class="buttons">
+                <div>
+                    <div>
+                        <a href="#">    
+                            <div class="testImg">
+                                <div class="circ"></div>
+                                Créer un profil recruteur
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">    
+                            <div class="testImg">
+                                <div class="circ"></div>
+                                Créer un profil recruteur
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </div>
     </header>
+    <section class="video">
+        <h2>Comment ça marche ?</h2>
+    </section>
 </body>
 </html>

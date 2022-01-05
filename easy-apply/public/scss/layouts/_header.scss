@@ -13,11 +13,6 @@ header {
         display: flex;
         align-items: center;
         margin-top: 50px;
-        border: solid 1px red;
-
-        & > div {
-            border: solid 1px red;
-        }
 
         &__desc {
             font-family: $font-text;
@@ -28,6 +23,7 @@ header {
                 font-size: 65px;
                 font-weight: bold;
                 line-height: 78px;
+                font-family: $font-title;
             }
 
             p {
@@ -56,5 +52,43 @@ header {
             }
         }
 
+    }
+
+    .buttons {
+        padding: 0 36px;
+        margin-top: 194px;
+
+        & > div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: $font-title;
+            font-size: 24px;
+
+            .testImg{
+                display: flex;
+                background-image: url('../img/bouton.png');
+                background-size: cover;
+                height: 146px;
+                width: 382px;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 0.5px;
+                color: #fff;
+                font-weight: 700;
+
+                .circ{
+                    width: 30px;
+                    height: 30px;
+                    background: #fff;
+                    border-radius: 100%;
+                    margin-right: 25px;
+                }
+            }
+        }
     }
 }
