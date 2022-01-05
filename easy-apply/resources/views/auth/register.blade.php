@@ -42,7 +42,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Déjà membre ? Se connecter') }}
+                    {{ __('Déjà membre test? Se connecter') }}
                 </a>
 
                 <x-jet-button class="ml-4">
