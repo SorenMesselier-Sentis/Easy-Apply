@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CandidateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::delete('/candidate/delete/{id}' , [ CandidateController::class, 'destroy'])->middleware('auth');
+Route::get('/candidate/{id}' , [ CandidateController::class, 'show'])->middleware('auth')->name('candidates.show');
+Route::delete('/candidate/delete/{id}' , [ CandidateController::class, 'destroy'])->middleware('auth')->name('candidates.destroy');

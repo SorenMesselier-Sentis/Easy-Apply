@@ -24,7 +24,11 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        
+        'email',
+        'password',
+        'is_enable',
+        'is_company',
+        'is_admin'
     ];
 
     /**
@@ -47,6 +51,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function candidate() {
+        return $this->hasOne(Candidate::class);
+    }
+
+    public function company() {
+        return $this->hasOne(Company::class);
+    }
 
     /**
      * The accessors to append to the model's array form.

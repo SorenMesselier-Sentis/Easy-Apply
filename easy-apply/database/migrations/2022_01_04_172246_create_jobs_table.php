@@ -22,7 +22,7 @@ class CreateJobsTable extends Migration
             $table->timestamps();
 
             $table->foreignId('id_location')->nullable()->constrained('locations');
-            $table->foreignId('id_working_modes')->constrained('working_modes');
+            $table->foreignId('id_working_mode')->constrained('working_modes');
             $table->foreignId('id_contract_type')->constrained('contract_types');
             $table->foreignId('id_company')->constrained('companies');
             $table->foreignId('id_sector')->constrained('sectors');

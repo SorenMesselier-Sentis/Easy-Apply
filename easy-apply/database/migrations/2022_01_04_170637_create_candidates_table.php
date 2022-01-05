@@ -29,7 +29,8 @@ class CreateCandidatesTable extends Migration
             $table->timestamps();
 
             $table->foreignId('id_user')->constrained('users');
-            $table->foreignId('id_status')->constrained('status');
+            $table->foreignId('id_statuss')->constrained('statuss');
+            $table->foreignId('id_location')->constrained('locations');
         });
     }
 
