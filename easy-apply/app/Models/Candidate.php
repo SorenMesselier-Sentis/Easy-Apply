@@ -21,8 +21,9 @@ class Candidate extends Model
       'facebook',
       'linkedin',
       'is_completed',
-      'id_status',
-      'id_user',
+      'status_id',
+      'user_id',
+      'location_id',
     ];
 
     public function user() {

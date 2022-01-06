@@ -9,8 +9,8 @@ class JobTag extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id_tag',
-        'id_job',
+        'tag_id',
+        'job_id',
     ];
 
     public function tag() {

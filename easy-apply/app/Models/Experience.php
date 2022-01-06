@@ -15,8 +15,8 @@ class Experience extends Model
       'end_date',
       'job_name',
       'description',
-      'id_sector',
-      'id_candidate'
+      'sector_id',
+      'candidate_id',
     ];
     
 

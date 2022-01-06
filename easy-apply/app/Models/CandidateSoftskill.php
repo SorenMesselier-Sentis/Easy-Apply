@@ -10,8 +10,8 @@ class CandidateSoftskill extends Model
     use HasFactory;
 
     protected $fillable = [
-      'id_softskill',
-      'id_candidate'
+      'softskill_id',
+      'candidate_id',
     ];
 
     public function candidate() {
