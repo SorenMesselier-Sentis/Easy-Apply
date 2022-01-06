@@ -16,7 +16,7 @@ use App\Http\Controllers\CandidateController;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home'); 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
@@ -24,3 +24,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/candidate/{id}' , [ CandidateController::class, 'show'])->middleware('auth')->name('candidates.show');
 Route::delete('/candidate/delete/{id}' , [ CandidateController::class, 'destroy'])->middleware('auth')->name('candidates.destroy');
+
+Route::get('/404',function(){
+    return view('errors.404');
+})->name('404');

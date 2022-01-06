@@ -38,6 +38,19 @@ header {
                 margin-top: 94px;
                 margin-bottom: 10px;
             }
+
+            a {
+                margin-top: 107px;
+            }
+
+            span {
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+            .erreur-message {
+                margin-top: 34px;
+            }
         }
 
         &__image {
@@ -47,6 +60,12 @@ header {
 
             img {
                 width: 80%;
+            }
+
+            &__404 {
+                img {
+                    width: 100%;
+                }
             }
         }
 

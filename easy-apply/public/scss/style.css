@@ -56,6 +56,25 @@ table {
   font-family: "Now-Medium";
   src: url("fonts/Now-Medium/NowAlt-Bold.otf");
 }
+.button-orange {
+  background-color: #F89A54;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  font-family: "PT Sans Pro", sans-serif;
+  border-radius: 25px;
+  margin: 0 auto;
+  text-decoration: none;
+  padding: 14px 51px;
+  display: inline-block;
+  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
+}
+
+footer {
+  display: flex;
+  background-color: #EEEEEE;
+}
+
 header {
   background-repeat: no-repeat;
   background-size: 100%;
@@ -94,6 +113,16 @@ header .header-content__desc div {
   margin-top: 94px;
   margin-bottom: 10px;
 }
+header .header-content__desc a {
+  margin-top: 107px;
+}
+header .header-content__desc span {
+  font-size: 32px;
+  font-weight: bold;
+}
+header .header-content__desc .erreur-message {
+  margin-top: 34px;
+}
 header .header-content__image {
   display: flex;
   justify-content: center;
@@ -101,6 +130,9 @@ header .header-content__image {
 }
 header .header-content__image img {
   width: 80%;
+}
+header .header-content__image__404 img {
+  width: 100%;
 }
 header .buttons {
   padding: 0 36px;
@@ -250,6 +282,7 @@ body {
   margin: 0 auto;
   margin-top: 29px;
   margin-bottom: 57px;
+  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
 }
 .card > div a {
   color: #595959;
@@ -311,6 +344,7 @@ body {
   margin: 0 auto;
   margin-top: 29px;
   margin-bottom: 30px;
+  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
 }
 .card2 > div a {
   color: #595959;
@@ -381,6 +415,7 @@ body {
   padding: 0 140px;
   margin: auto;
   margin-top: 276px;
+  margin-bottom: 184px;
 }
 .video h2 {
   font-family: "Now-Medium", sans-serif;

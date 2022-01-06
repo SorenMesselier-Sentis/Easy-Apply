@@ -1,0 +1,13 @@
+.button-orange {
+    background-color: $color-orange;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+    font-family: $font-text;
+    border-radius: 25px;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 14px 51px;
+    display: inline-block;
+    box-shadow: 5px 5px 25px rgba(250,199,124,0.51);
+}

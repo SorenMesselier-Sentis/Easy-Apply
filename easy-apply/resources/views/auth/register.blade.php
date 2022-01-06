@@ -10,24 +10,7 @@
 <body>
     <header>
     <div>
-            <nav class="navbar">
-                <div>
-                    <a href=""><img src="img/logo.png" alt="logo easy-apply"></a>
-                </div>
-                <div>
-                    <ul class="navbar__main-menu">
-                        <li><a href="" class="left">Accueil</a></li>
-                        <li><a href="" class="left">Profil</a></li>
-                        <li><a href="" class="left">Mes offres</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><a href="" class="button1">Se connecter</a></li>
-                        <li><a href="{{ url('register') }}" class="button2">S'inscrire</a></li>
-                    </ul>
-                </div>
-            </nav>
+            @include('partials/navbar');
 
             <form class="card" method="POST" action="{{ route('register') }}">
                 @csrf
