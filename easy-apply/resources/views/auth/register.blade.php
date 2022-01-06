@@ -28,8 +28,9 @@
                     </ul>
                 </div>
             </nav>
-
-            <form class="card" method="POST" action="{{ route('register') }}">
+        </div>
+    </header>
+    <form class="card" method="POST" action="{{ route('register') }}">
                 @csrf
                 <h2>Inscrivez-vous</h2>
                 <div>
@@ -75,7 +76,5 @@
                     </a>
                 </div>
             </form>
-        </div>
-    </header>
 </body>
 </html>
