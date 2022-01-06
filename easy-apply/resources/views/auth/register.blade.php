@@ -29,6 +29,15 @@
                     </ul>
                 </div>
             </nav>
+            <x-guest-layout>
+                <x-jet-authentication-card>
+                    <x-slot name="logo">
+            <x-jet-authentication-card-logo />
+        </x-slot>
+
+        <x-jet-validation-errors class="mb-4" />
+
+
 
             <form class="card" method="POST" action="{{ route('register') }}">
                 @csrf
@@ -70,11 +79,14 @@
                         {{ __('S\'inscrire') }}
                     </x-jet-button>
 
+            <div class="flex items-center justify-end mt-4">
                     <a href="{{ route('login') }}">
                         {{ __('Déjà membre ? Se connecter') }}
                     </a>
                 </div>
             </form>
+            </x-jet-authentication-card>
+        </x-guest-layout>
         </div>
     </header>
 </body>
