@@ -57,8 +57,6 @@ table {
   src: url("fonts/Now-Medium/NowAlt-Bold.otf");
 }
 header {
-  min-height: 100vh;
-  background-image: url("../img/fond.png");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: 100% 0;
@@ -152,24 +150,30 @@ header .buttons a .testImg .circ {
 .navbar ul.navbar__main-menu {
   gap: 145px;
 }
-.navbar ul.navbar__main-menu li a {
+.navbar ul.navbar__main-menu .left {
   position: relative;
 }
-.navbar ul.navbar__main-menu li a:hover::before {
+.navbar ul.navbar__main-menu .left::before {
   content: "";
-  display: inline-block;
   position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 25px;
+  width: 0;
   height: 3px;
-  background-color: #F89A54;
+  bottom: 0;
+  left: 0;
+  background-color: lightcoral;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.navbar ul.navbar__main-menu .left:hover::before {
+  visibility: visible;
+  width: 100%;
 }
 .navbar ul li a {
   text-decoration: none;
   color: white;
   display: inline-block;
   position: relative;
+  padding-bottom: 8px;
 }
 .navbar ul li a.button1 {
   border: solid 2px white;
@@ -186,6 +190,11 @@ header .buttons a .testImg .circ {
 }
 .navbar > div:first-child {
   margin-right: 89px;
+}
+
+body {
+  background-image: url("../img/fond.png");
+  background-size: cover;
 }
 
 .card {
@@ -247,6 +256,120 @@ header .buttons a .testImg .circ {
   text-decoration: none;
   font-size: 14px;
   font-family: "PT Sans Pro", sans-serif;
+}
+
+.card2 {
+  background-color: white;
+  max-width: 594px;
+  min-height: 767px;
+  margin: 0 auto;
+  padding: 103px 60px 28px 60px;
+  border-radius: 42px;
+  margin-bottom: 285px;
+  margin-top: 75px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.card2 h2 {
+  text-align: center;
+  font-family: "Now-Medium", sans-serif;
+  font-size: 50px;
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 73px;
+}
+.card2 > div {
+  display: flex;
+  flex-direction: column;
+}
+.card2 > div label {
+  font-family: "PT Sans Pro", sans-serif;
+  color: #595959;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.card2 > div input {
+  height: 48px;
+  border: none;
+  background-color: #DEDEDE;
+  margin-bottom: 28px;
+}
+.card2 > div input:focus {
+  outline: none;
+}
+.card2 > div button {
+  background-color: #F89A54;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+  font-family: "PT Sans Pro", sans-serif;
+  border: none;
+  border-radius: 25px;
+  width: 55%;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+.card2 > div a {
+  color: #595959;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "PT Sans Pro", sans-serif;
+}
+.card2 .remember_me {
+  display: flex;
+  width: 80%;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.card2 .remember_me span {
+  padding-top: 18px;
+  margin-left: 10px;
+}
+.card2 .butPw {
+  display: flex;
+  margin-left: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  justify-content: space-between;
+}
+.card2 .googleConn {
+  display: flex;
+  background-color: red;
+  width: 70%;
+  height: 50px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  font-family: "PT Sans Pro", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card2 .bottomBar {
+  display: flex;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  height: auto;
+  justify-content: center;
+}
+.card2 .bottomBar .orBar, .card2 .bottomBar .orBar2 {
+  width: 40%;
+  border: rgba(182, 181, 181, 0.534) 0.5px solid;
+  height: 0px;
+  margin-top: 9px;
+}
+.card2 .bottomBar .orBar {
+  margin-right: 15px;
+}
+.card2 .bottomBar .orBar2 {
+  margin-left: 15px;
 }
 
 * {

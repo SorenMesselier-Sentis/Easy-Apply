@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,16 +9,16 @@
 </head>
 <body>
     <header>
-        <div>
+    <div>
             <nav class="navbar">
                 <div>
                     <a href=""><img src="img/logo.png" alt="logo easy-apply"></a>
                 </div>
                 <div>
                     <ul class="navbar__main-menu">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Profil</a></li>
-                        <li><a href="">Mes offres</a></li>
+                        <li><a href="" class="left">Accueil</a></li>
+                        <li><a href="" class="left">Profil</a></li>
+                        <li><a href="" class="left">Mes offres</a></li>
                     </ul>
                 </div>
                 <div>
@@ -29,15 +28,6 @@
                     </ul>
                 </div>
             </nav>
-            <x-guest-layout>
-                <x-jet-authentication-card>
-                    <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
-
-        <x-jet-validation-errors class="mb-4" />
-
-
 
             <form class="card" method="POST" action="{{ route('register') }}">
                 @csrf
@@ -85,11 +75,7 @@
                     </a>
                 </div>
             </form>
-            </x-jet-authentication-card>
-        </x-guest-layout>
         </div>
     </header>
 </body>
 </html>
-
-        

@@ -12,22 +12,26 @@
         &.navbar__main-menu {
             gap: 145px;
 
-            li {
-                a {
-                    position: relative;
-
-                    &:hover::before {
-                        content: "";
-                        display: inline-block;
-                        position: absolute;
-                        bottom: -10px;
-                        left: 0;
-                        width: 25px;
-                        height: 3px;
-                        background-color: $color-orange;
-                    }
+            .left{
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 3px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: lightcoral;
+                    visibility: hidden;
+                    transition: all 0.3s;
+                    
+                }
+                &:hover::before{
+                    visibility: visible;
+                    width: 100%;
                 }
             }
+        
         }
 
         li {
@@ -37,6 +41,7 @@
                 color: $text-main;
                 display: inline-block;
                 position: relative;
+                padding-bottom: 8px;
 
                 &.button1 {
                     border: solid 2px white;

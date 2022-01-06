@@ -1,3 +1,8 @@
+body{
+    background-image: url('../img/fond.png');
+    background-size: cover;
+}
+
 .card {
     background-color: white;
     max-width: 594px;
@@ -62,6 +67,126 @@
             text-decoration: none;
             font-size: 14px;
             font-family: $font-text;
+        }
+    }
+}
+.card2{
+    background-color: white;
+    max-width: 594px;
+    min-height: 767px;
+    margin: 0 auto;
+    padding: 103px 60px 28px 60px;
+    border-radius: 42px;
+    margin-bottom: 285px;
+    margin-top: 75px;
+    box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+
+    h2 {
+        text-align: center;
+        font-family: $font-title;
+        font-size: 50px;
+        color: $color-gray-title;
+        font-weight: bold;
+        margin-bottom: 73px;
+    }
+
+    > div {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-family: $font-text;
+            color: $color-gray-text;
+            font-size: 18px;
+            margin-bottom: 9px;
+        }
+
+        input {
+            height: 48px;
+            border: none;
+            background-color: $color-gray-input;
+            margin-bottom: 28px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $color-orange;
+            cursor: pointer;
+            color: white;
+            font-size: 25px;
+            font-family: $font-text;
+            border: none;
+            border-radius: 25px;
+            width: 55%;
+            height: 60px;
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 29px;
+            margin-bottom: 30px;
+        }
+
+        a {
+            color: $color-gray-text;
+            text-decoration: none;
+            font-size: 14px;
+            font-family: $font-text;
+        }
+    }
+    .remember_me{
+        display: flex;
+        width: 80%;
+        height: 50px;
+        margin-left: 10px;
+        cursor: pointer;
+            span{
+                padding-top: 18px;
+                margin-left: 10px;
+            }
+    }
+    .butPw{
+        display: flex;
+        margin-left: 14px;
+        margin-top: 10px;
+        font-weight: 500;
+        justify-content: space-between;
+    }
+    .googleConn{
+        display: flex;
+        background-color: red;
+        width: 70%;
+        height: 50px;
+        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        font-size: 22px;
+        font-family: $font-text;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bottomBar{
+        display: flex;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        height: auto;
+        justify-content: center;
+        .orBar, .orBar2{
+            width: 40%;
+            border: rgba(182, 181, 181, 0.534) 0.5px solid;
+            height: 0px;
+            margin-top: 9px;
+        }
+        .orBar{
+            margin-right: 15px;
+        }
+        .orBar2{
+            margin-left: 15px;
         }
     }
 }

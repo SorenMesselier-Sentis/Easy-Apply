@@ -8,6 +8,7 @@
     <title>Inscription</title>
 </head>
 <body>
+<div class="background">
     <header>
         <div>
             <nav class="navbar">
@@ -16,18 +17,12 @@
                 </div>
                 <div>
                     <ul class="navbar__main-menu">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Profil</a></li>
-                        <li><a href="">Mes offres</a></li>
+                        <li><a href="" class="left">Accueil</a></li>
+                        <li><a href="" class="left">Profil</a></li>
+                        <li><a href="" class="left">Mes offres</a></li>
                     </ul>
                 </div>
-            <x-guest-layout>
-                <x-jet-authentication-card>
-                    <x-slot name="logo">
-                        <x-jet-authentication-card-logo />
-                    </x-slot>
-
-                    <x-jet-validation-errors/>
+    </header>
 
                     @if (session('status'))
                         <div>
@@ -35,9 +30,9 @@
                         </div>
                     @endif
 
-                    <form method="POST" action="{{ route('login') }}">
+                    <form method="POST" class="card2" action="{{ route('login') }}">
                         @csrf
-
+                    <h2>Connectez-Vous</h2>
                         <div>
                             <x-jet-label for="email" value="{{ __('Email') }}" />
                             <x-jet-input id="email" type="email" name="email" :value="old('email')" required autofocus />
@@ -48,28 +43,40 @@
                             <x-jet-input id="password" type="password" name="password" required autocomplete="current-password" />
                         </div>
 
+
+
                         <div>
+
+                        <x-jet-button>
+                                {{ __('Se connecter') }}
+                            </x-jet-button>
+                            <div>
                             <label for="remember_me">
+                                <div class="remember_me">
                                 <x-jet-checkbox id="remember_me" name="remember" />
-                                <span>{{ __('Remember me') }}</span>
+                                <span>{{ __('Se souvenir de moi') }}</span>
+                                </div>
                             </label>
                         </div>
 
-                        <div>
+                        <div class="butPw">
                             @if (Route::has('password.request'))
                                 <a href="{{ route('password.request') }}">
-                                    {{ __('Forgot your password?') }}
+                                    {{ __('Mot de passe oublié ?') }}
                                 </a>
                             @endif
-
-                            <x-jet-button>
-                                {{ __('Log in') }}
-                            </x-jet-button>
+                            <a href="{{ route('register') }}">Créer un compte</a>
                         </div>
+
+                        </div>
+                    <section class="bottomBar">
+                    <div class="orBar"></div>ou<div class="orBar2"></div>
+                    </section>
+
+                    <a class="googleConn" href="#">Connection via Google</a>
+                
                     </form>
-                </x-jet-authentication-card>
-            </x-guest-layout>
         </div>
-    </header>
+</div>
 </body>
 </html>

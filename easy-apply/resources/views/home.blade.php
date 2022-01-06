@@ -9,16 +9,16 @@
 </head>
 <body>
     <header>
-        <div>
+    <div>
             <nav class="navbar">
                 <div>
                     <a href=""><img src="img/logo.png" alt="logo easy-apply"></a>
                 </div>
                 <div>
                     <ul class="navbar__main-menu">
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Profil</a></li>
-                        <li><a href="">Mes offres</a></li>
+                        <li><a href="" class="left">Accueil</a></li>
+                        <li><a href="" class="left">Profil</a></li>
+                        <li><a href="" class="left">Mes offres</a></li>
                     </ul>
                 </div>
                 <div>
