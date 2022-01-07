@@ -364,7 +364,10 @@ body {
 .card > div input {
   height: 48px;
   border: none;
-  background-color: #DEDEDE;
+  background-color: rgba(238, 234, 234, 0.185);
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  padding-left: 20px;
   margin-bottom: 28px;
 }
 .card > div input:focus {
@@ -423,14 +426,21 @@ body {
   font-size: 18px;
   margin-bottom: 9px;
 }
+.card2 > div label #remember_me {
+  box-shadow: 4px 4px 6px white;
+}
 .card2 > div input {
   height: 48px;
   border: none;
-  background-color: #DEDEDE;
+  background-color: rgba(238, 234, 234, 0.185) !important;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  padding-left: 20px;
   margin-bottom: 28px;
 }
 .card2 > div input:focus {
   outline: none;
+  background-color: rgba(238, 234, 234, 0.185) !important;
 }
 .card2 > div button {
   background-color: #F89A54;
