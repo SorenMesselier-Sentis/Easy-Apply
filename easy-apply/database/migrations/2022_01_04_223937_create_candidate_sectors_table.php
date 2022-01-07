@@ -14,11 +14,11 @@ class CreateCandidateSectorsTable extends Migration
     public function up()
     {
         Schema::create('candidate_sectors', function (Blueprint $table) {
-          $table->id();
-          $table->timestamps();
-
-          $table->foreignId('id_candidate')->constrained('candidates');
-          $table->foreignId('id_sector')->constrained('sectors');
+        $table->id();
+        $table->timestamps();
+        
+        $table->foreignId('candidate_id')->constrained('candidates');
+        $table->foreignId('sector_id')->constrained('sectors');
         });
     }
 

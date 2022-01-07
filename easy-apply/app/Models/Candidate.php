@@ -21,16 +21,19 @@ class Candidate extends Model
       'facebook',
       'linkedin',
       'is_completed',
-      'id_status',
-      'id_user',
+      'status_id',
+      'user_id',
+      'location_id',
     ];
 
+    protected $with = ['user', 'location', 'softskill'];
+
     public function user() {
-      return $this->belongsTo(User::class);
+      return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function statuss() {
-      return $this->belongsTo(Statuss::class);
+    public function status() {
+      return $this->belongsTo(Status::class, 'status_id');
     }
 
     public function location() {

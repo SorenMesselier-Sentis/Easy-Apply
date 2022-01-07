@@ -10,11 +10,11 @@ class Job extends Model
     use HasFactory;
     protected $fillable = [
         'label',
-        'id_location',
-        'id_working_mode',
-        'id_contract_mode',
-        'id_company',
-        'id_sector',
+        'location_id',
+        'working_mode_id',
+        'contract_mode_id',
+        'company_id',
+        'sector_id',
         'description',
         'salary',
         'archive_date',

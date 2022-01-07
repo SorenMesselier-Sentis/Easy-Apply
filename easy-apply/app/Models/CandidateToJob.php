@@ -10,8 +10,8 @@ class CandidateToJob extends Model
     use HasFactory;
 
     protected $fillable = [
-      'id_candidate',
-      'id_job'
+      'candidate_id',
+      'job_id',
     ];
 
     public function candidate() {

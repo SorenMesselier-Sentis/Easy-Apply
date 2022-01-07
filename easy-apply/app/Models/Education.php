@@ -13,9 +13,9 @@ class Education extends Model
       'label',
       'start_date',
       'end_date',
-      'id_degree',
-      'id_candidate',
-      'id_diploma'
+      'degree_id',
+      'candidate_id',
+      'diploma_id',
     ];
 
     public function candidate() {

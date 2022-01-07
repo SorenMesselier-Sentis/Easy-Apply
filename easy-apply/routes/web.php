@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\CompanyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,13 +19,9 @@ Route::get('/', function () {
     return view('home');
 })->name('home'); 
 
+Route::resource('candidate', 'App\Http\Controllers\CandidateController')->except(['index']);
+Route::resource('company', 'App\Http\Controllers\CompanyController')->except(['index']);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
-
-Route::get('/candidate/{id}' , [ CandidateController::class, 'show'])->middleware('auth')->name('candidates.show');
-Route::delete('/candidate/delete/{id}' , [ CandidateController::class, 'destroy'])->middleware('auth')->name('candidates.destroy');
-
-Route::get('/404',function(){
-    return view('errors.404');
-})->name('404');
