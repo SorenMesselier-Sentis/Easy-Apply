@@ -529,7 +529,7 @@ header .buttons a .testImg .circ {
 
 .background {
   background-image: url("../img/fond.png");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
