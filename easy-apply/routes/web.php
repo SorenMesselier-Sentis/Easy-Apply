@@ -19,8 +19,6 @@ Route::get('/', function () {
     return view('home');
 });
 
-// Route::get('/candidate/{$id}', [CandidateController::class , 'validate']);
-
 Route::resource('candidate', 'App\Http\Controllers\CandidateController')->except(['index']);
 Route::resource('company', 'App\Http\Controllers\CompanyController')->except(['index']);
 

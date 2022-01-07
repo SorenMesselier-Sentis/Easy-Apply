@@ -26,7 +26,7 @@ class Candidate extends Model
       'location_id',
     ];
 
-    protected $with = ['user'];
+    protected $with = ['user', 'location', 'softskill'];
 
     public function user() {
       return $this->belongsTo(User::class, 'user_id');

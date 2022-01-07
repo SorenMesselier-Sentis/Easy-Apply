@@ -15,6 +15,8 @@ class Location extends Model
         'zipcode',
     ];
 
+    protected $with = ['city', 'country'];
+
     public function city() {
         return $this->belongsTo(City::class);
     }
