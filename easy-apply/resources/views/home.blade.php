@@ -51,9 +51,9 @@
         <div>
             <p>Suivez nous</p>
             <div>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
             </div>
         </div>
         <div>
@@ -68,7 +68,12 @@
         </div>
         <div>
             <p>Newsletter</p>
-            <a href="">Email</a>
+            <div class="emailBtn">
+                <form>
+                    <input type="email" id="email" size="30" placeholder="Email" required>
+                    <button>Abonnez-Vous !</button>
+                </form>
+            </div>
             <p>Abonnez vous à la newsletter et découvrez toutes les nouvelles offres de Easy Apply en temps réel !</p>
         </div>
     </footer>

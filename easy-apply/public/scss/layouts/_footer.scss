@@ -1,4 +1,126 @@
 footer {
     display: flex;
     background-color: #EEEEEE;
+    padding: 73px 140px;
+    justify-content: center;
+    align-items: flex-start;
+
+    & > div {
+        p:first-of-type {
+            color: $color-gray-title;
+            font-size: 25px;
+            font-family: $font-title;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-gray-text;
+            font-size: 18px;
+        }
+    }
+
+    div:first-of-type {
+        min-width: 28%;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        a {
+            background-color: $color-gray-title;
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            border-radius: 100%;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+
+            .fab {
+                color: #EEEEEE;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 18px;
+                position: relative;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    div:nth-of-type(2) {
+        min-width: 28.5%;
+        padding: 9px 122px 9px 54px;
+        margin-right: 83px;
+        border-left: $color-orange solid 1px;
+        border-right: $color-orange solid 1px;
+
+        li {
+            margin-bottom: 9px;
+
+            a {
+                text-decoration: none;
+                color: $color-gray-text;
+                font-family: $font-text;
+                font-size: 18px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    div:last-of-type {
+        min-width: 43.5%;
+        padding: 9px 0px;
+
+        p {
+            width: 88%;
+        }
+
+        .emailBtn{
+            height: 60px;
+            margin-bottom: 37px;
+            
+            input{
+                height: 50px;
+                font-family: $font-text;
+                padding-left: 40px;
+                border-radius: 20px 0px 0px 20px;
+                border: none;
+                width: 60%;
+                font-size: 18px;
+                box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+                outline: none;
+            }
+
+            button{
+                border-radius: 50px;
+                height: 50px;
+                font-family: $font-text;
+                width: 40%;
+                margin-left: -20px;
+                color: #fff;
+                background-color: #F89A54;
+                border: none;
+                cursor: pointer;
+                font-size: 18px;
+
+                &:hover {
+                    background-color: darken($color-orange,5);
+                }
+            }
+        }
+    }    
 }

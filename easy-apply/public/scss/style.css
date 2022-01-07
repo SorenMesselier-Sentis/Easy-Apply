@@ -73,6 +73,108 @@ table {
 footer {
   display: flex;
   background-color: #EEEEEE;
+  padding: 73px 140px;
+  justify-content: center;
+  align-items: flex-start;
+}
+footer > div p:first-of-type {
+  color: #646464;
+  font-size: 25px;
+  font-family: "Now-Medium", sans-serif;
+  margin-bottom: 20px;
+}
+footer > div p {
+  font-family: "PT Sans Pro", sans-serif;
+  color: #595959;
+  font-size: 18px;
+}
+footer div:first-of-type {
+  min-width: 28%;
+}
+footer div:first-of-type div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+footer div:first-of-type a {
+  background-color: #646464;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+footer div:first-of-type a .fab {
+  color: #EEEEEE;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  position: relative;
+}
+footer div:first-of-type a:hover {
+  opacity: 0.8;
+}
+footer div:nth-of-type(2) {
+  min-width: 28.5%;
+  padding: 9px 122px 9px 54px;
+  margin-right: 83px;
+  border-left: #F89A54 solid 1px;
+  border-right: #F89A54 solid 1px;
+}
+footer div:nth-of-type(2) li {
+  margin-bottom: 9px;
+}
+footer div:nth-of-type(2) li a {
+  text-decoration: none;
+  color: #595959;
+  font-family: "PT Sans Pro", sans-serif;
+  font-size: 18px;
+}
+footer div:nth-of-type(2) li a:hover {
+  opacity: 0.8;
+}
+footer div:nth-of-type(2) li:last-of-type {
+  margin-bottom: 0;
+}
+footer div:last-of-type {
+  min-width: 43.5%;
+  padding: 9px 0px;
+}
+footer div:last-of-type p {
+  width: 88%;
+}
+footer div:last-of-type .emailBtn {
+  height: 60px;
+  margin-bottom: 37px;
+}
+footer div:last-of-type .emailBtn input {
+  height: 50px;
+  font-family: "PT Sans Pro", sans-serif;
+  padding-left: 40px;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  width: 60%;
+  font-size: 18px;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+footer div:last-of-type .emailBtn button {
+  border-radius: 50px;
+  height: 50px;
+  font-family: "PT Sans Pro", sans-serif;
+  width: 40%;
+  margin-left: -20px;
+  color: #fff;
+  background-color: #F89A54;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+footer div:last-of-type .emailBtn button:hover {
+  background-color: #f78c3c;
 }
 
 header {
