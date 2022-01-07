@@ -26,12 +26,14 @@ class Candidate extends Model
       'location_id',
     ];
 
+    protected $with = ['user'];
+
     public function user() {
-      return $this->belongsTo(User::class);
+      return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function statuss() {
-      return $this->belongsTo(Statuss::class);
+    public function status() {
+      return $this->belongsTo(Status::class, 'status_id');
     }
 
     public function location() {
