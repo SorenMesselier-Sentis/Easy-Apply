@@ -1,8 +1,4 @@
 header {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 100% 0;
-
     > div {
         @include sectionpadding;
     }

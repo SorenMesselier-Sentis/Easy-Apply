@@ -9,41 +9,43 @@
     <title>Easy-apply</title>
 </head>
 <body>
-    <header>
-        <div>
-            @include('partials/navbar');
-            <section class="header-content">
-                <div class="header-content__desc">
-                    <h1>Titre</h1>
-                    <div></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus mi orci, vitae gravida enim tristique vitae. Sed vehicula enim a urna iaculis convallis. Aliquam facilisis ante magna, ac feugiat tellus convallis at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus mi orci, vitae gravida enim tristique vitae. Sed vehicula enim a urna iaculis convallis. Aliquam facilisis ante magna, ac feugiat</p>
-                </div>
-                <div class="header-content__image">
-                    <img src="img/people.png" alt="people holding phones">
-                </div>
-            </section>
-            <section class="buttons">
-                <div>
-                    <div>
-                        <a href="#">    
-                            <div class="testImg">
-                                <div class="circ"></div>
-                                Créer un profil recruteur
-                            </div>
-                        </a>
+    <section class="background">
+        <header>
+            <div>
+                @include('partials/navbar')
+                <section class="header-content">
+                    <div class="header-content__desc">
+                        <h1>Titre</h1>
+                        <div></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus mi orci, vitae gravida enim tristique vitae. Sed vehicula enim a urna iaculis convallis. Aliquam facilisis ante magna, ac feugiat tellus convallis at. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus mi orci, vitae gravida enim tristique vitae. Sed vehicula enim a urna iaculis convallis. Aliquam facilisis ante magna, ac feugiat</p>
                     </div>
-                    <div>
-                        <a href="#">    
-                            <div class="testImg">
-                                <div class="circ"></div>
-                                Créer un profil recruteur
-                            </div>
-                        </a>
+                    <div class="header-content__image">
+                        <img src="img/people.png" alt="people holding phones">
                     </div>
-                </div>
-            </section>
-        </div>
-    </header>
+                </section>
+                <section class="buttons">
+                    <div>
+                        <div>
+                            <a href="#">    
+                                <div class="testImg">
+                                    <div class="circ"></div>
+                                    Créer un profil recruteur
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#">    
+                                <div class="testImg">
+                                    <div class="circ"></div>
+                                    Créer un profil recruteur
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+    </section>
     <section class="video">
         <h2>Comment ça marche ?</h2>
     </section>

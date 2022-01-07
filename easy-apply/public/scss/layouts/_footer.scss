@@ -116,6 +116,7 @@ footer {
                 border: none;
                 cursor: pointer;
                 font-size: 18px;
+                box-shadow: 5px 5px 25px rgba(250,199,124,0.51);
 
                 &:hover {
                     background-color: darken($color-orange,5);

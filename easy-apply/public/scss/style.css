@@ -172,16 +172,12 @@ footer div:last-of-type .emailBtn button {
   border: none;
   cursor: pointer;
   font-size: 18px;
+  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
 }
 footer div:last-of-type .emailBtn button:hover {
   background-color: #f78c3c;
 }
 
-header {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 100% 0;
-}
 header > div {
   padding: 0 140px;
   margin: auto;
@@ -324,12 +320,6 @@ header .buttons a .testImg .circ {
 }
 .navbar > div:first-child {
   margin-right: 89px;
-}
-
-body {
-  background-image: url("../img/fond.png");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .card {
@@ -535,6 +525,12 @@ body {
   font-size: 35px;
   color: #34A9FD;
   font-weight: bold;
+}
+
+.background {
+  background-image: url("../img/fond.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */

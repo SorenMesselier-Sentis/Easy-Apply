@@ -9,7 +9,7 @@
     <title>Inscription</title>
 </head>
 <body>
-    <div class="background">
+    <section class="background">
         <header>
             <div>
                 <nav class="navbar">
@@ -25,13 +25,11 @@
                     </div>
                 </nav>
         </header>
-
         @if (session('status'))
         <div>
             {{ session('status') }}
         </div>
         @endif
-
         <form method="POST" class="card2" action="{{ route('login') }}">
             @csrf
             <h2>Connectez-Vous</h2>
@@ -70,11 +68,9 @@
             <section class="bottomBar">
                 <div class="orBar"></div>ou<div class="orBar2"></div>
             </section>
-
             <a class="googleConn" href="#">Connection via Google</a>
-                
-                    </form>
-    </div>
+        </form>
+    </section>
     @include('partials/footer')
 </body>
 </html>

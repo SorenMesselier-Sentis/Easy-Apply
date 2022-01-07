@@ -9,23 +9,25 @@
     <title>Page introuvable | Easy-apply</title>
 </head>
 <body>
-    <header>
-    <div>
-            @include('partials/navbar');
-            <section class="header-content">
-                <div class="header-content__desc">
-                    <h1>Oups !</h1>
-                    <div></div>
-                    <p>La page que vous cherchez semble introuvable.</p>
-                    <p class="erreur-message">Code erreur : <span>404</span></p>
-                    <a href="{{ route('home') }}" class="button-orange">Retourner à l'accueil</a>
-                </div>
-                <div class="header-content__image__404">
-                    <img src="img/404-image.png" alt="fantôme 404">
-                </div>
-            </section>
-        </div>
-    </header>
+    <section class="background">
+        <header>
+            <div>
+                @include('partials/navbar')
+                <section class="header-content">
+                    <div class="header-content__desc">
+                        <h1>Oups !</h1>
+                        <div></div>
+                        <p>La page que vous cherchez semble introuvable.</p>
+                        <p class="erreur-message">Code erreur : <span>404</span></p>
+                        <a href="{{ route('home') }}" class="button-orange" style="margin-bottom:400px;">Retourner à l'accueil</a>
+                    </div>
+                    <div class="header-content__image__404">
+                        <img src="img/404-image.png" alt="fantôme 404">
+                    </div>
+                </section>
+            </div>
+        </header>
+    </section>
     @include('partials/footer')
 </body>
 </html>
