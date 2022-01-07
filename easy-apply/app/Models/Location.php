@@ -9,11 +9,13 @@ class Location extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id_country',
-        'id_city',
+        'country_id',
+        'city_id',
         'address',
         'zipcode',
     ];
+
+    protected $with = ['city', 'country'];
 
     public function city() {
         return $this->belongsTo(City::class);
@@ -25,5 +27,13 @@ class Location extends Model
 
     public function job() {
         return $this->hasOne(Job::class);
+    }
+
+    public function candidate() {
+        return $this->hasOne(Candidate::class);
+    }
+
+    public function company() {
+        return $this->hasOne(Company::class);
     }
 }

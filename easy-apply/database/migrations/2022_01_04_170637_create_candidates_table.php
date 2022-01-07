@@ -18,7 +18,7 @@ class CreateCandidatesTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->date('birth_date')->nullable();
-            $table->integer('phone_number')->nullable();
+            $table->string('phone_number')->nullable()->unique();
             $table->string('profile_picture')->nullable();
             $table->string('cv')->nullable();
             $table->string('website')->nullable();
@@ -28,9 +28,9 @@ class CreateCandidatesTable extends Migration
             $table->boolean('is_completed')->default(0);
             $table->timestamps();
 
-            $table->foreignId('id_user')->constrained('users');
-            $table->foreignId('id_statuss')->constrained('statuss');
-            $table->foreignId('id_location')->constrained('locations');
+            $table->foreignId('user_id')->constrained('users');
+            $table->foreignId('status_id')->constrained('status');
+            $table->foreignId('location_id')->nullable()->constrained('locations');
         });
     }
 

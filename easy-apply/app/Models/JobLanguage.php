@@ -9,8 +9,8 @@ class JobLanguage extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id_language',
-        'id_job',
+        'language_id',
+        'job_id',
     ];
 
     public function language() {
