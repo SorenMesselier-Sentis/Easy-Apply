@@ -1,6 +1,7 @@
 .form{
     margin-top: 8vh;
-    .formCard{
+
+    .formCard {
         background-color: white;
         max-width: 75%;
         min-height: 767px;
@@ -11,13 +12,10 @@
         margin-top: 75px;
         box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
         
-        .displayduZ{
+        .displayduZ {
             display: flex;
             justify-content: center;
         }
-
-
-
         
         h2 {
             text-align: center;
@@ -96,3 +94,37 @@
         }
     }   
 }
+
+@media screen and (max-width:1000px) {
+    .form .formCard {
+        padding-left: 0;
+        padding-right: 0;
+
+        .part1 input,.part2 input {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .form {
+        .formCard {
+            max-width: 95%;
+
+            .displayduZ {
+                flex-direction: column;
+            }
+
+            h2 {
+                font-size: 40px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .part1, .part2 {
+                width: 90%;
+            }
+        }
+    }
+}
+

@@ -707,6 +707,31 @@ header .buttons a .testImg .circ {
   align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .form .formCard {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form .formCard .part1 input, .form .formCard .part2 input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form .formCard {
+    max-width: 95%;
+  }
+  .form .formCard .displayduZ {
+    flex-direction: column;
+  }
+  .form .formCard h2 {
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form .formCard .part1, .form .formCard .part2 {
+    width: 90%;
+  }
+}
 * {
   z-index: 1;
   box-sizing: border-box;
