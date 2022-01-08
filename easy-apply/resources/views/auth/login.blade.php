@@ -18,8 +18,8 @@
                     </div>
                     <div>
                         <ul class="navbar__main-menu">
-                            <li><a href="" class="left">Accueil</a></li>
-                            <li><a href="" class="left">Profil</a></li>
+                            <li><a href="{{ route('home') }}" class="left">Accueil</a></li>
+                            <li><a href="{{ route('dashboard') }}" class="left">Profil</a></li>
                             <li><a href="" class="left">Mes offres</a></li>
                         </ul>
                     </div>

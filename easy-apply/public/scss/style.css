@@ -310,6 +310,9 @@ header .buttons a .testImg .circ {
   padding: 5px 26px 7px 28px;
   border-radius: 25px;
 }
+.navbar ul li a.button1:hover {
+  background-color: #F89A54;
+}
 .navbar ul li a.button2 {
   padding: 5px 39px 7px 44px;
   border-radius: 25px;
