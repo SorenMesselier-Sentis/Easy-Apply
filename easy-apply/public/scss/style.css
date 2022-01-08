@@ -313,6 +313,9 @@ header .buttons a .testImg .circ {
   header .header-content__image {
     display: none;
   }
+  header .header-content__image__404 {
+    display: none;
+  }
   header .buttons {
     margin-top: 70px;
   }
@@ -332,6 +335,10 @@ header .buttons a .testImg .circ {
     width: 20px !important;
     height: 20px !important;
     margin-bottom: 15px !important;
+  }
+
+  .header-content__desc .button-orange {
+    padding: 21px 15px;
   }
 }
 .navbar {
