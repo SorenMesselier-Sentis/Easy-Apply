@@ -509,6 +509,90 @@ header .buttons a .testImg .circ {
   margin-left: 15px;
 }
 
+.form {
+  margin-top: 8vh;
+}
+.form .formCard {
+  background-color: white;
+  max-width: 75%;
+  min-height: 767px;
+  margin: 0 auto;
+  padding: 103px 60px 28px 60px;
+  border-radius: 42px;
+  margin-bottom: 285px;
+  margin-top: 75px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.form .formCard .displayduZ {
+  display: flex;
+  justify-content: center;
+}
+.form .formCard h2 {
+  text-align: center;
+  font-family: "Now-Medium", sans-serif;
+  font-size: 50px;
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 73px;
+}
+.form .formCard label {
+  font-family: "PT Sans Pro", sans-serif;
+  color: #595959;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.form .formCard input {
+  height: 48px;
+  border: none;
+  background-color: rgba(238, 234, 234, 0.185) !important;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 28px;
+}
+.form .formCard input:focus {
+  outline: none;
+  background-color: rgba(238, 234, 234, 0.185) !important;
+}
+.form .formCard .btnOr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.form .formCard .btnOr a {
+  margin-top: 40px;
+}
+.form .formCard .button-orange {
+  border: none;
+  justify-content: center;
+  margin: 0 auto;
+}
+.form .formCard a {
+  color: #595959;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "PT Sans Pro", sans-serif;
+}
+.form .formCard .part1, .form .formCard .part2 {
+  width: 40%;
+  margin-left: 5%;
+}
+.form .formCard .part1 input, .form .formCard .part2 input {
+  width: 80%;
+  margin-top: 10px;
+}
+.form .formCard .divLogo {
+  border: turquoise 1px solid;
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   z-index: 1;
   box-sizing: border-box;

@@ -1,0 +1,98 @@
+.form{
+    margin-top: 8vh;
+    .formCard{
+        background-color: white;
+        max-width: 75%;
+        min-height: 767px;
+        margin: 0 auto;
+        padding: 103px 60px 28px 60px;
+        border-radius: 42px;
+        margin-bottom: 285px;
+        margin-top: 75px;
+        box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+        
+        .displayduZ{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        
+        h2 {
+            text-align: center;
+            font-family: $font-title;
+            font-size: 50px;
+            color: $color-gray-title;
+            font-weight: bold;
+            margin-bottom: 73px;
+        }
+    
+            label {
+                font-family: $font-text;
+                color: $color-gray-text;
+                font-size: 18px;
+                margin-bottom: 9px;
+            }
+    
+            input {
+                height: 48px;
+                border: none;
+                background-color: rgba(238, 234, 234, 0.185) !important;
+                box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+                border-radius: 15px;
+                padding-left: 20px;
+                margin-bottom: 28px;
+                // .logoDiv{
+                //     background-color: transparent !important;
+                //     box-shadow: transparent !important;
+
+                // }
+                &:focus {
+                    outline: none;
+                    background-color: rgba(238, 234, 234, 0.185) !important;
+                }
+            }
+            
+            .btnOr{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 30px;
+                a{
+                    margin-top: 40px;
+                }
+            }
+
+            .button-orange{
+                border: none;
+                justify-content: center;
+                margin: 0 auto;
+            }
+    
+            a {
+                color: $color-gray-text;
+                text-decoration: none;
+                font-size: 14px;
+                font-family: $font-text;
+            }
+        .part1, .part2{
+            width: 40%;
+            margin-left: 5%;
+            input{
+                width: 80%;
+                margin-top: 10px;
+            }
+        }
+        .divLogo{
+            border: turquoise 1px solid;
+            display: flex;
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }   
+}
