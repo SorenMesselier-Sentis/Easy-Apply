@@ -468,7 +468,11 @@ header .buttons a .testImg .circ {
   font-family: "PT Sans Pro", sans-serif;
 }
 
-.card2 {
+.login {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.login .card2 {
   background-color: white;
   max-width: 594px;
   min-height: 767px;
@@ -479,7 +483,7 @@ header .buttons a .testImg .circ {
   margin-top: 75px;
   box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
 }
-.card2 h2 {
+.login .card2 h2 {
   text-align: center;
   font-family: "Now-Medium", sans-serif;
   font-size: 50px;
@@ -487,20 +491,20 @@ header .buttons a .testImg .circ {
   font-weight: bold;
   margin-bottom: 73px;
 }
-.card2 > div {
+.login .card2 > div {
   display: flex;
   flex-direction: column;
 }
-.card2 > div label {
+.login .card2 > div label {
   font-family: "PT Sans Pro", sans-serif;
   color: #595959;
   font-size: 18px;
   margin-bottom: 9px;
 }
-.card2 > div label #remember_me {
+.login .card2 > div label #remember_me {
   box-shadow: 4px 4px 6px white;
 }
-.card2 > div input {
+.login .card2 > div input {
   height: 48px;
   border: none;
   background-color: rgba(238, 234, 234, 0.185) !important;
@@ -509,11 +513,11 @@ header .buttons a .testImg .circ {
   padding-left: 20px;
   margin-bottom: 28px;
 }
-.card2 > div input:focus {
+.login .card2 > div input:focus {
   outline: none;
   background-color: rgba(238, 234, 234, 0.185) !important;
 }
-.card2 > div button {
+.login .card2 > div button {
   background-color: #F89A54;
   cursor: pointer;
   color: white;
@@ -530,31 +534,31 @@ header .buttons a .testImg .circ {
   margin-bottom: 30px;
   box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
 }
-.card2 > div a {
+.login .card2 > div a {
   color: #595959;
   text-decoration: none;
   font-size: 14px;
   font-family: "PT Sans Pro", sans-serif;
 }
-.card2 .remember_me {
+.login .card2 .remember_me {
   display: flex;
   width: 80%;
   height: 50px;
   margin-left: 10px;
   cursor: pointer;
 }
-.card2 .remember_me span {
+.login .card2 .remember_me span {
   padding-top: 18px;
   margin-left: 10px;
 }
-.card2 .butPw {
+.login .card2 .butPw {
   display: flex;
   margin-left: 14px;
   margin-top: 10px;
   font-weight: 500;
   justify-content: space-between;
 }
-.card2 .googleConn {
+.login .card2 .googleConn {
   display: flex;
   background-color: red;
   width: 70%;
@@ -570,26 +574,48 @@ header .buttons a .testImg .circ {
   margin-left: auto;
   margin-right: auto;
 }
-.card2 .bottomBar {
+.login .card2 .bottomBar {
   display: flex;
   margin-top: 7%;
   margin-bottom: 7%;
   height: auto;
   justify-content: center;
 }
-.card2 .bottomBar .orBar, .card2 .bottomBar .orBar2 {
+.login .card2 .bottomBar .orBar, .login .card2 .bottomBar .orBar2 {
   width: 40%;
   border: rgba(182, 181, 181, 0.534) 0.5px solid;
   height: 0px;
   margin-top: 9px;
 }
-.card2 .bottomBar .orBar {
+.login .card2 .bottomBar .orBar {
   margin-right: 15px;
 }
-.card2 .bottomBar .orBar2 {
+.login .card2 .bottomBar .orBar2 {
   margin-left: 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card h2 {
+    font-size: 40px;
+  }
+
+  .login .card2 {
+    padding: 103px 20px 28px 20px !important;
+  }
+  .login .card2 h2 {
+    font-size: 40px !important;
+  }
+  .login .card2 > div button {
+    width: 85%;
+  }
+  .login .card2 .googleConn {
+    width: 85%;
+  }
+}
 .form {
   margin-top: 8vh;
 }
