@@ -55,6 +55,7 @@
     </section>
     <section class="video">
         <h2>Comment ça marche ?</h2>
+        <div></div>
     </section>
     @include('partials/footer')
 </body>
