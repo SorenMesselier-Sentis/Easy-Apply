@@ -178,6 +178,29 @@ footer div:last-of-type .emailBtn button:hover {
   background-color: #f78c3c;
 }
 
+@media screen and (max-width: 1080px) {
+  footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  footer div:nth-of-type(2) {
+    border: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    padding-left: 37px;
+  }
+}
+@media screen and (max-width: 520px) {
+  footer {
+    padding-left: 37px;
+  }
+  footer div:nth-of-type(3) .emailBtn {
+    display: none;
+  }
+}
 header > div {
   padding: 0 140px;
   margin: auto;
@@ -266,6 +289,58 @@ header .buttons a .testImg .circ {
   margin-right: 25px;
 }
 
+@media screen and (max-width: 1150px) {
+  header > div {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 930px) {
+  header > div {
+    padding: 0 20px;
+  }
+  header .header-content {
+    align-items: flex-start;
+  }
+  header .header-content__desc {
+    width: 100%;
+  }
+  header .header-content__desc div {
+    margin-top: 50px;
+  }
+  header .header-content__desc p {
+    width: 100%;
+  }
+  header .header-content__image {
+    display: none;
+  }
+  header .header-content__image__404 {
+    display: none;
+  }
+  header .buttons {
+    margin-top: 70px;
+  }
+  header .buttons div {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .buttons a {
+    font-size: 18px !important;
+  }
+  .buttons a .testImg {
+    width: 300px !important;
+    height: 115px !important;
+  }
+  .buttons a .circ {
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: 15px !important;
+  }
+
+  .header-content__desc .button-orange {
+    padding: 21px 15px;
+  }
+}
 .navbar {
   display: grid;
   grid-template-columns: auto auto 1fr;
@@ -290,7 +365,7 @@ header .buttons a .testImg .circ {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: lightcoral;
+  background-color: #F89A54;
   visibility: hidden;
   transition: all 0.3s;
 }
@@ -310,6 +385,9 @@ header .buttons a .testImg .circ {
   padding: 5px 26px 7px 28px;
   border-radius: 25px;
 }
+.navbar ul li a.button1:hover {
+  background-color: #F89A54;
+}
 .navbar ul li a.button2 {
   padding: 5px 39px 7px 44px;
   border-radius: 25px;
@@ -322,6 +400,16 @@ header .buttons a .testImg .circ {
   margin-right: 89px;
 }
 
+@media screen and (max-width: 1280px) {
+  .navbar div:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 930px) {
+  .navbar div:nth-child(2) {
+    display: none;
+  }
+}
 .card {
   background-color: white;
   max-width: 594px;
@@ -387,7 +475,11 @@ header .buttons a .testImg .circ {
   font-family: "PT Sans Pro", sans-serif;
 }
 
-.card2 {
+.login {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.login .card2 {
   background-color: white;
   max-width: 594px;
   min-height: 767px;
@@ -398,7 +490,7 @@ header .buttons a .testImg .circ {
   margin-top: 75px;
   box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
 }
-.card2 h2 {
+.login .card2 h2 {
   text-align: center;
   font-family: "Now-Medium", sans-serif;
   font-size: 50px;
@@ -406,20 +498,20 @@ header .buttons a .testImg .circ {
   font-weight: bold;
   margin-bottom: 73px;
 }
-.card2 > div {
+.login .card2 > div {
   display: flex;
   flex-direction: column;
 }
-.card2 > div label {
+.login .card2 > div label {
   font-family: "PT Sans Pro", sans-serif;
   color: #595959;
   font-size: 18px;
   margin-bottom: 9px;
 }
-.card2 > div label #remember_me {
+.login .card2 > div label #remember_me {
   box-shadow: 4px 4px 6px white;
 }
-.card2 > div input {
+.login .card2 > div input {
   height: 48px;
   border: none;
   background-color: rgba(238, 234, 234, 0.185) !important;
@@ -428,11 +520,11 @@ header .buttons a .testImg .circ {
   padding-left: 20px;
   margin-bottom: 28px;
 }
-.card2 > div input:focus {
+.login .card2 > div input:focus {
   outline: none;
   background-color: rgba(238, 234, 234, 0.185) !important;
 }
-.card2 > div button {
+.login .card2 > div button {
   background-color: #F89A54;
   cursor: pointer;
   color: white;
@@ -449,31 +541,31 @@ header .buttons a .testImg .circ {
   margin-bottom: 30px;
   box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
 }
-.card2 > div a {
+.login .card2 > div a {
   color: #595959;
   text-decoration: none;
   font-size: 14px;
   font-family: "PT Sans Pro", sans-serif;
 }
-.card2 .remember_me {
+.login .card2 .remember_me {
   display: flex;
   width: 80%;
   height: 50px;
   margin-left: 10px;
   cursor: pointer;
 }
-.card2 .remember_me span {
+.login .card2 .remember_me span {
   padding-top: 18px;
   margin-left: 10px;
 }
-.card2 .butPw {
+.login .card2 .butPw {
   display: flex;
   margin-left: 14px;
   margin-top: 10px;
   font-weight: 500;
   justify-content: space-between;
 }
-.card2 .googleConn {
+.login .card2 .googleConn {
   display: flex;
   background-color: red;
   width: 70%;
@@ -489,26 +581,157 @@ header .buttons a .testImg .circ {
   margin-left: auto;
   margin-right: auto;
 }
-.card2 .bottomBar {
+.login .card2 .bottomBar {
   display: flex;
   margin-top: 7%;
   margin-bottom: 7%;
   height: auto;
   justify-content: center;
 }
-.card2 .bottomBar .orBar, .card2 .bottomBar .orBar2 {
+.login .card2 .bottomBar .orBar, .login .card2 .bottomBar .orBar2 {
   width: 40%;
   border: rgba(182, 181, 181, 0.534) 0.5px solid;
   height: 0px;
   margin-top: 9px;
 }
-.card2 .bottomBar .orBar {
+.login .card2 .bottomBar .orBar {
   margin-right: 15px;
 }
-.card2 .bottomBar .orBar2 {
+.login .card2 .bottomBar .orBar2 {
   margin-left: 15px;
 }
 
+@media screen and (max-width: 500px) {
+  .card {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .card h2 {
+    font-size: 40px;
+  }
+
+  .login .card2 {
+    padding: 103px 20px 28px 20px !important;
+  }
+  .login .card2 h2 {
+    font-size: 40px !important;
+  }
+  .login .card2 > div button {
+    width: 85%;
+  }
+  .login .card2 .googleConn {
+    width: 85%;
+  }
+}
+.form {
+  margin-top: 8vh;
+}
+.form .formCard {
+  background-color: white;
+  max-width: 75%;
+  min-height: 767px;
+  margin: 0 auto;
+  padding: 103px 60px 28px 60px;
+  border-radius: 42px;
+  margin-bottom: 285px;
+  margin-top: 75px;
+  box-shadow: 5px 3px 6px rgba(0, 0, 0, 0.16);
+}
+.form .formCard .displayduZ {
+  display: flex;
+  justify-content: center;
+}
+.form .formCard h2 {
+  text-align: center;
+  font-family: "Now-Medium", sans-serif;
+  font-size: 50px;
+  color: #646464;
+  font-weight: bold;
+  margin-bottom: 73px;
+}
+.form .formCard label {
+  font-family: "PT Sans Pro", sans-serif;
+  color: #595959;
+  font-size: 18px;
+  margin-bottom: 9px;
+}
+.form .formCard input {
+  height: 48px;
+  border: none;
+  background-color: rgba(238, 234, 234, 0.185) !important;
+  box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 28px;
+}
+.form .formCard input:focus {
+  outline: none;
+  background-color: rgba(238, 234, 234, 0.185) !important;
+}
+.form .formCard .btnOr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.form .formCard .btnOr a {
+  margin-top: 40px;
+}
+.form .formCard .button-orange {
+  border: none;
+  justify-content: center;
+  margin: 0 auto;
+}
+.form .formCard a {
+  color: #595959;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "PT Sans Pro", sans-serif;
+}
+.form .formCard .part1, .form .formCard .part2 {
+  width: 40%;
+  margin-left: 5%;
+}
+.form .formCard .part1 input, .form .formCard .part2 input {
+  width: 80%;
+  margin-top: 10px;
+}
+.form .formCard .divLogo {
+  border: turquoise 1px solid;
+  display: flex;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .form .formCard {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form .formCard .part1 input, .form .formCard .part2 input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form .formCard {
+    max-width: 95%;
+  }
+  .form .formCard .displayduZ {
+    flex-direction: column;
+  }
+  .form .formCard h2 {
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .form .formCard .part1, .form .formCard .part2 {
+    width: 90%;
+  }
+}
 * {
   z-index: 1;
   box-sizing: border-box;
@@ -526,11 +749,28 @@ header .buttons a .testImg .circ {
   color: #34A9FD;
   font-weight: bold;
 }
+.video div {
+  background-color: #319DFB;
+  width: 100%;
+  height: 600px;
+  border-radius: 50px;
+  margin-top: 70px;
+}
 
 .background {
   background-image: url("../img/fond.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 930px) {
+  .video {
+    padding: 0 20px;
+  }
+  .video div {
+    height: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

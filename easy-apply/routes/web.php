@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home'); 
 
+Route::get('/404', function () {
+    return view('404');
+})->name('404'); 
+
 Route::resource('candidate', 'App\Http\Controllers\CandidateController')->except(['index']);
 Route::resource('company', 'App\Http\Controllers\CompanyController')->except(['index']);
 
