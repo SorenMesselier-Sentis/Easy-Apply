@@ -22,7 +22,7 @@
                         <a href="{{ route('home') }}" class="button-orange" style="margin-bottom:400px;">Retourner à l'accueil</a>
                     </div>
                     <div class="header-content__image__404">
-                        <img src="img/404-image.png" alt="fantôme 404">
+                        <img src="../img/404-image.png" alt="fantôme 404">
                     </div>
                 </section>
             </div>

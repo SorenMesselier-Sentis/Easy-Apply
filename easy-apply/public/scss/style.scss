@@ -20,13 +20,6 @@
     margin-top: 276px;
     margin-bottom: 184px;
 
-    h2 {
-        font-family: $font-title;
-        font-size: 35px;
-        color: $color-blue;
-        font-weight: bold;
-    }
-
     div {
         background-color: #319DFB;
         width: 100%;
@@ -43,12 +36,203 @@
     min-height: 100vh;
 }
 
+.title-blue {
+    font-family: $font-title;
+    font-size: 35px;
+    color: $color-blue;
+    font-weight: bold;
+}
+
 @media screen and (max-width:930px) {
     .video {
         padding: 0 20px;
 
         div {
             height: 400px;
+        }
+    }
+}
+
+.a-propos {
+    @include sectionpadding;
+    margin-top: 150px;
+    background-image: url('../img/decor-left.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: bottom left;
+
+    &__edit {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .button-orange2 {
+            background-color: $color-orange;
+            color: white;
+            font-size: 14px;
+            padding: 18px 54px;
+            text-decoration: none;
+            font-family: $font-text;
+            display: inline-block;
+            border-radius: 60px;
+            box-shadow: 5px 5px 25px rgba(250,199,124,0.51);
+            margin-bottom: 35px;
+            margin-top: 47px;
+
+            &:hover {
+                background-color: #e39052;
+            }
+            
+            i {
+                margin-left: 10px;
+            }
+        }
+    }
+    
+    &__elements {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .upload {
+            border-right: solid 1px $color-orange;
+            display: flex;
+            flex-direction: column;
+            padding-right: 40px;
+
+            img {
+                width: 80%;
+            }
+
+            a {
+                background-color: $color-orange;
+                margin-top: 27px;
+                margin-bottom: 157px;
+                color: white;
+                font-size: 14px;
+                padding: 18px 0px;
+                text-decoration: none;
+                text-align: center;
+                font-family: $font-text;
+                display: inline-block;
+                border-radius: 60px;
+                box-shadow: 5px 5px 25px rgba(250,199,124,0.51);
+
+                &:hover {
+                    background-color: #e39052;
+                }
+            }
+        }
+
+        .info {
+            padding-left: 40px;
+            font-family: $font-text;
+
+            h3 {
+                font-family: $font-title;
+                font-size: 30px;
+                color: $color-blue;
+                font-weight: bold;
+                margin-bottom: 27px;
+                margin-top: 40px;
+            }
+
+            > div {
+                
+                &:first-of-type {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 15px;
+                }
+
+                &:nth-of-type(2) {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 15px;
+                }
+
+                &:last-of-type {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 15px;
+                }
+            }
+
+            label,input{
+                display:flex;
+                flex-direction:column;
+            }
+
+            label {
+                font-size: 12px;
+                margin-bottom: 15px;
+                margin-top: 31px;
+            }
+
+            input {
+                height: 45px;
+                border-radius: 22px;
+                width: 230px;
+                border: none;
+                box-shadow: 5px 7px 19px rgba(0,0,0,0.16);
+                outline: none;
+            }
+
+            .desc {
+                height: 122px;
+            }
+        }
+    }
+}
+
+.historique-candidatures {
+    @include sectionpadding;
+    margin-top: 153px;
+    padding-bottom: 200px;
+
+    & > div {
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
+.parametres {
+    @include sectionpadding;
+    padding-bottom: 153px;
+    background-image: url('../img/decor-bottom.png');
+    background-repeat: no-repeat;
+    background-size: 445px;
+    background-position: 100% 0;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 39px;
+        margin-top: 153px;
+        
+        a {
+            color: white;
+            font-family: $font-text;
+            background-color: $color-orange;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 62px;
+            padding: 20px 170px;
+
+            &:hover {
+                background-color: #e39052;
+            }
         }
     }
 }
