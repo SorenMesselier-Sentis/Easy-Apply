@@ -29,3 +29,4 @@ Route::resource('company', 'App\Http\Controllers\CompanyController')->except(['i
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+

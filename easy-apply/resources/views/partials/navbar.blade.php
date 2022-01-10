@@ -1,11 +1,11 @@
 <nav class="navbar">
     <div>
-        <a href="{{ route('home') }}"><img src="img/logo.png" alt="logo easy-apply"></a>
+        <a href="{{ route('home') }}"><img src="../img/logo.png" alt="logo easy-apply"></a>
     </div>
     <div>
         <ul class="navbar__main-menu">
             <li><a href="{{ route('home') }}" class="left">Accueil</a></li>
-            <li><a href="{{ route('dashboard') }}" class="left">Profil</a></li>
+            <li><a href="{{ route('dashboard')}}" class="left">Profil</a></li>
             <li><a href="" class="left">Mes offres</a></li>
         </ul>
     </div>

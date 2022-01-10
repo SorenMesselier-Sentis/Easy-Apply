@@ -54,7 +54,7 @@
         </header>
     </section>
     <section class="video">
-        <h2>Comment ça marche ?</h2>
+        <h2 class="title-blue">Comment ça marche ?</h2>
         <div></div>
     </section>
     @include('partials/footer')

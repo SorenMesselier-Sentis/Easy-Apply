@@ -743,6 +743,12 @@ header .buttons a .testImg .circ {
   margin-top: 276px;
   margin-bottom: 184px;
 }
+.video h2 {
+  font-family: "Now-Medium", sans-serif;
+  font-size: 35px;
+  color: #34A9FD;
+  font-weight: bold;
+}
 .video div {
   background-color: #319DFB;
   width: 100%;
@@ -758,13 +764,6 @@ header .buttons a .testImg .circ {
   min-height: 100vh;
 }
 
-.title-blue {
-  font-family: "Now-Medium", sans-serif;
-  font-size: 35px;
-  color: #34A9FD;
-  font-weight: bold;
-}
-
 @media screen and (max-width: 930px) {
   .video {
     padding: 0 20px;
@@ -774,164 +773,13 @@ header .buttons a .testImg .circ {
   }
 }
 .a-propos {
-  padding: 0 140px;
-  margin: auto;
-  margin-top: 150px;
-  background-image: url("../img/decor-left.png");
-  background-repeat: no-repeat;
-  background-size: 100px;
-  background-position: bottom left;
+  background-color: black;
 }
-.a-propos__edit {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.a-propos__edit .button-orange2 {
-  background-color: #F89A54;
-  color: white;
-  font-size: 14px;
-  padding: 18px 54px;
-  text-decoration: none;
-  font-family: "PT Sans Pro", sans-serif;
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
-  margin-bottom: 35px;
-  margin-top: 47px;
-}
-.a-propos__edit .button-orange2:hover {
-  background-color: #e39052;
-}
-.a-propos__edit .button-orange2 i {
-  margin-left: 10px;
-}
-.a-propos__elements {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-.a-propos__elements .upload {
-  border-right: solid 1px #F89A54;
-  display: flex;
-  flex-direction: column;
-  padding-right: 40px;
-}
-.a-propos__elements .upload img {
-  width: 80%;
-}
-.a-propos__elements .upload a {
-  background-color: #F89A54;
-  margin-top: 27px;
-  margin-bottom: 157px;
-  color: white;
-  font-size: 14px;
-  padding: 18px 0px;
-  text-decoration: none;
-  text-align: center;
-  font-family: "PT Sans Pro", sans-serif;
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 5px 5px 25px rgba(250, 199, 124, 0.51);
-}
-.a-propos__elements .upload a:hover {
-  background-color: #e39052;
-}
-.a-propos__elements .info {
-  padding-left: 40px;
-  font-family: "PT Sans Pro", sans-serif;
-}
-.a-propos__elements .info h3 {
+.a-propos h2 {
   font-family: "Now-Medium", sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   color: #34A9FD;
   font-weight: bold;
-  margin-bottom: 27px;
-  margin-top: 40px;
-}
-.a-propos__elements .info > div:first-of-type {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 15px;
-}
-.a-propos__elements .info > div:nth-of-type(2) {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-}
-.a-propos__elements .info > div:last-of-type {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-}
-.a-propos__elements .info label, .a-propos__elements .info input {
-  display: flex;
-  flex-direction: column;
-}
-.a-propos__elements .info label {
-  font-size: 12px;
-  margin-bottom: 15px;
-  margin-top: 31px;
-}
-.a-propos__elements .info input {
-  height: 45px;
-  border-radius: 22px;
-  width: 230px;
-  border: none;
-  box-shadow: 5px 7px 19px rgba(0, 0, 0, 0.16);
-  outline: none;
-}
-.a-propos__elements .info .desc {
-  height: 122px;
 }
 
-.historique-candidatures {
-  padding: 0 140px;
-  margin: auto;
-  margin-top: 153px;
-  padding-bottom: 200px;
-}
-.historique-candidatures > div {
-  display: flex;
-  justify-content: center;
-  margin-top: 100px;
-}
-.historique-candidatures > div img {
-  width: 50%;
-}
-
-.parametres {
-  padding: 0 140px;
-  margin: auto;
-  padding-bottom: 153px;
-  background-image: url("../img/decor-bottom.png");
-  background-repeat: no-repeat;
-  background-size: 445px;
-  background-position: 100% 0;
-}
-.parametres div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 39px;
-  margin-top: 153px;
-}
-.parametres div a {
-  color: white;
-  font-family: "PT Sans Pro", sans-serif;
-  background-color: #F89A54;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 62px;
-  padding: 20px 170px;
-}
-.parametres div a:hover {
-  background-color: #e39052;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stle.css.map */
